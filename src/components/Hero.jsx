@@ -13,7 +13,9 @@ const Hero = ({ onBookDemo }) => {
       <div className="logo-container">
         <img id="hero-logo" src="/images/logo.png" alt="Rynova Logo"/>
       </div>
-      <h1>AI Automation. 24/7 Growth.<br/>Zero Missed Calls.</h1>
+      <h1 className="hero-heading">
+        AI Automation. 24/7 Growth.<br/>Zero Missed Calls.
+      </h1>
       <p>
         Rynova never sleeps. Instantly books, qualifies, and follows up—so you win more clients for your medspa, clinic, real estate, or any business.
       </p>

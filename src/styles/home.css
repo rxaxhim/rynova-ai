@@ -194,6 +194,9 @@
       transition: transform 0.5s cubic-bezier(.4,0,.2,1), filter 0.28s;
       opacity: 0.98;
     }
+    .hero-heading {
+        text-shadow: 0.5px 0 0 #000, 0 -0.5px 0 #000, 0 0.5px 0 #000, -0.5px 0 0 #000;
+    } 
     @keyframes floatLogo {0%,100%{transform:translateY(0);}50%{transform:translateY(-8px);}}
     header h1 {
       font-size: clamp(2.1rem, 4.7vw, 3.3rem);
@@ -859,7 +862,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
+  text-emphasis-color: transparent;
   margin-bottom: 5px;
   letter-spacing: -.01em;
   font-family: 'Outfit', sans-serif;
@@ -1158,7 +1161,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
+  text-emphasis-color: transparent;
   margin-top: 7px;         /* Controls title-sub gap */
   margin-bottom: 22px;     /* Controls sub-content gap */
   letter-spacing: -.01em;
