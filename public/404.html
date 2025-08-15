@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting…</title>
+    <script>
+      // If using a project page like /rynova-ai/, keep 1 path segment.
+      // If using a custom domain at the root, set this to 0.
+      var pathSegmentsToKeep = 0; // set to 1 if deploying to /rynova-ai/
+
+      var l = window.location;
+      var repo = l.pathname.split('/').slice(1, 1 + pathSegmentsToKeep).join('/');
+
+      var newUrl =
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        (repo ? '/' + repo : '') + '/?/' +
+        l.pathname.split('/').slice(1 + pathSegmentsToKeep).join('/') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash;
+
+      l.replace(newUrl);
+    </script>
+  </head>
+  <body></body>
+</html>
