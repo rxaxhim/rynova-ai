@@ -3,8 +3,10 @@ import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
+import useHomeScroll from '../utils/useHomeScroll';
 
 const Privacy = () => {
+  const go = useHomeScroll();
 
   return (
     <>
