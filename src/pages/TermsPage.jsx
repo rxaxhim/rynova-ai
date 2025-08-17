@@ -1,15 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Nav from '../components/Nav.jsx';
 import Footer from '../components/Footer.jsx';
-import useHomeScroll from '../utils/useHomeScroll';
 import { Helmet } from 'react-helmet';
 
 export default function TermsPage() {
-  const go = useHomeScroll();
-
   return (
     <>
-      <Nav onBookDemo={()=>go('contact')} />
+      <Nav onBookDemo={() => window.location.href = '/#contact'} />
       <Helmet>
         <title>Terms of Service – Rynova AI</title>
         <meta name="description" content="Read the terms of service for Rynova AI to understand our service agreement and user responsibilities." />
@@ -51,7 +49,7 @@ export default function TermsPage() {
 
           {/* Back to Home link */}
           <div className="policy-back">
-            <a href="/" onClick={(e)=>{e.preventDefault(); go('top');}}>
+            <Link to="/">
               {/* tiny home svg */}
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style={{verticalAlign:'middle'}}>
                 <path d="M4 11.5L12 4L20 11.5" stroke="#41ffe3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -59,7 +57,7 @@ export default function TermsPage() {
                 <rect x="9" y="15" width="6" height="5" rx="1" fill="none" stroke="#41ffe3" strokeWidth="2"/>
               </svg>
               &nbsp;Back to Home
-            </a>
+            </Link>
           </div>
 
           <h1>Terms of Service</h1>

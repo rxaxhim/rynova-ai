@@ -1,16 +1,13 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
-import useHomeScroll from '../utils/useHomeScroll';
 
 const Privacy = () => {
-  const go = useHomeScroll();
-
   return (
     <>
-      <Nav onBookDemo={()=>go('contact')} />
+      <Nav onBookDemo={() => window.location.href = '/#contact'} />
       <Helmet>
         <title>Privacy Policy – Rynova AI</title>
         <meta name="description" content="Read the privacy policy for Rynova AI to understand how we handle your data securely." />
