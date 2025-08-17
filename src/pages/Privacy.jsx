@@ -14,9 +14,37 @@ const Privacy = () => {
       <Helmet>
         <title>Privacy Policy – Rynova AI</title>
         <meta name="description" content="Read the privacy policy for Rynova AI to understand how we handle your data securely." />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.rynovaai.com/privacy" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Privacy Policy – Rynova AI" />
+        <meta property="og:description" content="Read the privacy policy for Rynova AI to understand how we handle your data securely." />
+        <meta property="og:url" content="https://www.rynovaai.com/privacy" />
+        <meta property="og:type" content="website" />
+        
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Privacy Policy",
+            "description": "Read the privacy policy for Rynova AI to understand how we handle your data securely.",
+            "url": "https://www.rynovaai.com/privacy",
+            "mainEntity": {
+              "@type": "Article",
+              "name": "Privacy Policy",
+              "datePublished": "2025-07-09",
+              "dateModified": "2025-07-09",
+              "author": {
+                "@type": "Organization",
+                "name": "Rynova AI"
+              }
+            }
+          })}
+        </script>
       </Helmet>
-      <main>
-        <body class="policy-page"></body>
+      <main className="policy-page">
         <div className="policy-container">
           <div className="policy-logo">
             <img src="/images/logo.png" alt="Rynova AI Logo" />
@@ -26,7 +54,7 @@ const Privacy = () => {
             <Link to="/" style={{ textDecoration: 'underline' }}>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style={{ verticalAlign: 'middle' }}>
                 <path d="M4 11.5L12 4L20 11.5" stroke="#41ffe3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M4 11.5V19C4 19.8284 4.67157 20.5 5.5 20.5H18.5C19.3284 20.5 20 19.8284 20 19V11.5" stroke="#41ffe3" strokeWidth="2"/>
+                <path d="M4 11.5V19C4 19.8284 4.67157 20.5 5.5 20.5H18.5C19.3284 20.5 20 19V11.5" stroke="#41ffe3" strokeWidth="2"/>
                 <rect x="9" y="15" width="6" height="5" rx="1" fill="none" stroke="#41ffe3" strokeWidth="2"/>
               </svg>
               {' '}Back to Home

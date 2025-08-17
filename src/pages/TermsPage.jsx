@@ -12,10 +12,38 @@ export default function TermsPage() {
       <Nav onBookDemo={()=>go('contact')} />
       <Helmet>
         <title>Terms of Service – Rynova AI</title>
-        <meta name="description" content="Read the privacy policy for Rynova AI to understand how we handle your data securely." />
+        <meta name="description" content="Read the terms of service for Rynova AI to understand our service agreement and user responsibilities." />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.rynovaai.com/terms" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Terms of Service – Rynova AI" />
+        <meta property="og:description" content="Read the terms of service for Rynova AI to understand our service agreement and user responsibilities." />
+        <meta property="og:url" content="https://www.rynovaai.com/terms" />
+        <meta property="og:type" content="website" />
+        
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Terms of Service",
+            "description": "Read the terms of service for Rynova AI to understand our service agreement and user responsibilities.",
+            "url": "https://www.rynovaai.com/terms",
+            "mainEntity": {
+              "@type": "Article",
+              "name": "Terms of Service",
+              "datePublished": "2025-07-09",
+              "dateModified": "2025-07-09",
+              "author": {
+                "@type": "Organization",
+                "name": "Rynova AI"
+              }
+            }
+          })}
+        </script>
       </Helmet>
-      <main>
-        <body class="policy-page"></body>
+      <main className="policy-page">
         <div className="policy-container">
           <div className="policy-logo">
             <img src="/images/logo.png" alt="Rynova AI Logo" />
@@ -46,7 +74,7 @@ export default function TermsPage() {
           <h2>3. User Responsibilities</h2>
           <ul>
             <li>You agree to use the service only for lawful purposes and in accordance with these terms.</li>
-            <li>You must not misuse the service (including spamming, hacking, or violating others’ rights).</li>
+            <li>You must not misuse the service (including spamming, hacking, or violating others' rights).</li>
             <li>If you create an account, you are responsible for maintaining its security and confidentiality.</li>
           </ul>
 
@@ -54,7 +82,7 @@ export default function TermsPage() {
           <p>All content, trademarks, logos, and technology on this website are the property of Rynova AI or its licensors. You may not copy, modify, or distribute our materials without permission.</p>
 
           <h2>5. Disclaimers and Limitation of Liability</h2>
-          <p>The service is provided “as is” and without warranty of any kind. Rynova AI is not liable for any indirect, incidental, or consequential damages arising from your use of the service.</p>
+          <p>The service is provided "as is" and without warranty of any kind. Rynova AI is not liable for any indirect, incidental, or consequential damages arising from your use of the service.</p>
 
           <h2>6. Termination</h2>
           <p>We reserve the right to suspend or terminate your access to our service at our discretion, without notice, for any reason, including violation of these terms.</p>

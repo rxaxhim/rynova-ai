@@ -1,6 +1,10 @@
 User-agent: *
 Allow: /
 
+# Ensure policy pages are crawlable
+Allow: /privacy
+Allow: /terms
+
 # Favicon location
 Favicon: https://www.rynovaai.com/favicon/favicon.ico
 
