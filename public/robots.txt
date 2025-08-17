@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
+# Favicon location
+Favicon: https://www.rynovaai.com/favicon/favicon.ico
+
 Sitemap: https://www.rynovaai.com/sitemap.xml
