@@ -36,7 +36,7 @@ const Timeline = () => {
             <div className="timeline-step-title">White-Glove Onboarding</div>
             <div className="timeline-step-desc">
               Our team connects everything for you—CRM, calendar, bookings, SMS, and automations.<br/>
-              <b>Go live in 24 hours with zero technical work. Just hand us the keys, we handle the rest.</b>
+              <b>Go live in 1 week with zero technical work. Just hand us the keys, we handle the rest.</b>
             </div>
           </div>
         </div>

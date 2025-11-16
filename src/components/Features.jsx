@@ -11,7 +11,7 @@ const Features = () => (
   <section id="about" className="feature-section">
     <div className="section-title">Why Choose Rynova?</div>
     <div className="timeline-sub">
-      Go live in 24 hours—our team connects your CRM, calendar, and more. No tech work needed.
+      Go live within 1 week — our team connects your CRM, calendar, and more. No tech work needed.
     </div>
     <div className="features-grid">
       <Item title="Zero Missed Calls" text="100% of your leads get answered—no more voicemails, no more lost revenue."/>
