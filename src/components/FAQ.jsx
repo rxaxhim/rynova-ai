@@ -22,7 +22,7 @@ const FAQ = () => {
     },
     { q: 'Do you set up all the integrations for me?', a: <><b>Yes—100% done for you.</b> We connect your CRM, calendar, SMS, email, review tools, and more, so your system is truly plug-and-play. You just hand us access, and we handle the rest.</> },
     { q: 'What locations do you serve?', a: <>Rynova serves businesses in <b>Mississauga, Toronto, the GTA, and throughout Canada and the United States</b>. We specialize in AI automation for local service businesses in the Greater Toronto Area, but also support clients across North America. Every system is customized for your region and timezone.</> },
-    { q: 'How quickly can I get started?', a: <>Most clients go live in <b>24-48 hours</b> after onboarding. We handle all setup, testing, and launch for you.</> },
+    { q: 'How quickly can I get started?', a: <>Most clients go live in <b>1 week</b> after onboarding. We handle all setup, testing, and launch for you.</> },
     { q: 'Can Rynova handle multiple staff or locations?', a: <>Yes! Rynova supports <b>multi-location businesses</b> and can route calls, bookings, and reminders to the right staff or team automatically.</> },
     { q: 'Is Rynova secure and privacy-compliant?', a: <>Absolutely. All data is encrypted and your workflows are fully compliant with privacy laws (PIPEDA, HIPAA-ready on request). You control your data and integrations.</> },
     { q: 'What if I already have a CRM or booking system?', a: <>No problem—Rynova’s team will connect and integrate with your CRM and booking tools (GoHighLevel, Square, HubSpot, Google Calendar, and more) for you. We handle the entire setup, so everything works seamlessly—no technical work needed on your end.</> },
