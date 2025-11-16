@@ -369,7 +369,7 @@ const Compare = () => (
           </tr>
 
           <tr>
-            <td>Go live in 24h</td>
+            <td>Go live in 1 week</td>
             <td className="yes">
               <svg width="26" height="26" viewBox="0 0 22 22" fill="none">
                 <circle cx="11" cy="11" r="11" fill="#41ffe3" opacity="0.13" />
